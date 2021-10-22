@@ -1,28 +1,93 @@
-Last login: Fri Oct 22 08:58:30 on console
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-WS8A17:~ it180209$ cd Documents/
-WS8A17:Documents it180209$ mkdir swift_uebungen
-WS8A17:Documents it180209$ cd swift_uebungen/
-WS8A17:swift_uebungen it180209$ git clone https://github.com/LaraPichler/swift-4ahitm-2122.git
-Cloning into 'swift-4ahitm-2122'...
-remote: Enumerating objects: 5, done.
-remote: Counting objects: 100% (5/5), done.
-remote: Compressing objects: 100% (4/4), done.
-remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (5/5), done.
-WS8A17:swift_uebungen it180209$ cd swift-4ahitm-2122/
-WS8A17:swift-4ahitm-2122 it180209$ git status
-On branch main
-Your branch is up to date with 'origin/main'.
+## User settings
+xcuserdata/
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	.DS_Store
-	NumberGuess 4/
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
 
-nothing added to commit but untracked files present (use "git add" to track)
-WS8A17:swift-4ahitm-2122 it180209$ rm .DS_Store 
-WS8A17:swift-4ahitm-2122 it180209$ 
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+.DS_Store
+*.xcodeproj/
