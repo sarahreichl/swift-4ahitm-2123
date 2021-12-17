@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  dispatch
+//  newTryJson
 //
-//  Created by Admin on 10.12.21.
+//  Created by Reichl Sarah on 17.12.21.
 //
 
 import UIKit
